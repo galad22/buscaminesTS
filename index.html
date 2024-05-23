@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./dist/celda.js"></script>
+    <script src="./dist/tablero.js"></script>
+    <script src="./dist/juego.js"></script>
+    <div id="game"></div>
+    <script>
+        let cols = 5;
+        let rows = 5;
+        const juego = new Juego(cols, rows);
+
+
+        document.getElementById("game").appendChild(juego.createTable());
+        juego.addEventListeners();
+        
+
+    </script>
+</body>
+
+</html>
+
+</table>
+</body>
+
+</html>
